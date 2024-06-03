@@ -1,0 +1,361 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #A0191A; /* Matching the header color */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #7A1214;
+    border-radius: 4px;
+}
+
+nav ul li .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #A0191A;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul li .submenu li {
+    display: block;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0 0 10px 0;
+}
+/*
+    .hero-text h1 {
+        font-size: 3em;
+        margin-top: 150px;
+    }
+    
+*/
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#news .news-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#news .news-item {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+#news .news-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Committees styles */
+.committees {
+   
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.committees h2 {
+   
+grid-column: span 2;
+margin-bottom: 20px;
+text-decoration: none;
+}
+
+.committee-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    
+}
+
+.board-trustees {
+    background: #a33;
+}
+
+.ec-council {
+    background: #444;
+}
+
+.committee-box .icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .submenu {
+        position: static;
+    }
+
+    .committees {
+        grid-template-columns: 1fr;
+    }
+}
+
+    
+    header {
+        background-color: #A0191A; /* Matching the header color */
+        padding: 10px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .logo img {
+        height: 50px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 20px;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul li {
+        position: relative;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s;
+    }
+    
+    nav ul li a:hover {
+        background-color: #7A1214;
+        border-radius: 4px;
+    }
+    
+    nav ul li .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #A0191A;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav ul li:hover .submenu {
+        display: block;
+    }
+    
+    nav ul li .submenu li {
+        display: block;
+    }
+    
+    .hero {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+    
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 90%;
+    }
+    
+    .hero-text h1 {
+        font-size: 3em;
+        margin: 0 0 10px 0;
+    }
+    
+    section {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    #news .news-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    #news .news-item {
+        background-color: #f8f9fa;
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        flex: 1;
+    }
+    
+    #news .news-item img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    
+    footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .footer-links a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+        }
+        
+        .hero-text h1 {
+            font-size: 2em;
+        }
+        
+        .news-container {
+            flex-direction: column;
+        
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+    
+    .hero-text h1 {
+        font-size: 2em;
+    }
+    
+    .news-container {
+        flex-direction: column;
+    }
+    
+    .committee {
+        flex-direction: column;
+        align-items: center;
+    }
+}
